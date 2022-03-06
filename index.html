@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baraja de cartas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto+Mono:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="bodyElement">
+
+    <div class="chronometers">
+        <h1 class="title">The memory</h1>
+
+        <div class="chronometer-element">
+            <h4 class="header-title">Movimientos</h4>
+            <div class="header-num">
+                <span class="movements-element">00</span>/<span class="total-movements">20</span>
+            </div>
+        </div>
+
+        <div class="chronometer-element">
+            <h4 class="header-title">Tiempo</h4>
+            <div class="header-num">
+                <span class="minutes">00</span>:<span class="seconds">00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- <header class="header">
+        <h1 class="title">THE MEMORY</h1>
+    </header> -->
+
+    <main class="mainElement">
+        <div id="table" class="table">
+            <!-- cards content -->
+        </div>
+
+        <div class="feedback">
+            <div class="modal">
+                <h2>¡Buen trabajo!</h2>
+                <button class="reset">¿Reiniciar?</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/01-variables-globales.js"></script>
+    <script src="./js/02-baraja-reparte.js"></script>
+    <script src="./js/03-descubrir-comparar.js"></script>
+    <script src="./js/04-acierto-error.js"></script>
+    <script src="./js/06-chronometer.js"></script>
+    <script src="./js/07-contador.js"></script>
+    <script src="./js/08-finish.js"></script>
+    <script src="./js/05-iniciar.js"></script>
+</body>
+
+</html>

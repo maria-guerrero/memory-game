@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+  font-family: 'Staatliches', cursive;
+  color: rgb(85, 85, 85);
+  font-size: 40px;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  text-transform: uppercase;
+  font-size: 40px;
+  padding: 25px;
+  color: white;
+  filter: drop-shadow(1px 1px 6px rgba(19, 170, 145, 0.815));
+}
+  .title:hover {
+    filter: drop-shadow(1px 1px 6px rgb(6, 24, 12));
+  }
+
+.chronometer-element {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.116);
+  font-family: 'Staatliches', cursive;
+}
+  .header-title {
+    font-size: 15px;
+    color: rgb(158, 158, 158);
+  }
+  .header-num {
+    font-size: 35px;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(158, 158, 158);
+  }
+
+.bodyElement {
+    font-size: 2rem;
+    background-image: url('../images/sunset.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .mainElement {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding-top: 20px;
+  }
+
+  .feedback {
+    text-align: center;
+    display: none;
+  }
+    .visible {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+   .table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 50rem;
+    margin: auto;
+  }
+  
+  .card {
+    width: 100px;
+    height: 150px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #99f8ffb9 0%, transparent 100%);
+    box-shadow: 2px 1px 8px rgba(24, 15, 7, 0.863), 4px 4px 10px rgba(35, 167, 156, 0.212);
+    /* position: relative; */
+    transition: 0.3s;
+    cursor: pointer;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }
+
+  .card-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    background: rgba(255, 255, 255, 0.788);
+    box-shadow: 1px 1px 3px rgba(13, 14, 14, 0.589), 4px 4px 10px rgba(12, 11, 11, 0.603);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    padding-top: 0.4rem;
+  }
+  
+  .card-content::selection {
+    background: transparent;
+  }
+  
+  .card.discovered {
+    transform: rotateY(-180deg);
+  }
+  
+  /* @keyframes error {
+  10%,
+  90% {
+    transform: rotateY(-180deg) translateX(-1px);
+  }
+  20%,
+  80% {
+    transform: rotateY(-180deg) translateX(2px);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotateY(-180deg) translateX(-4px);
+  }
+  40%,
+  60% {
+    transform: rotateY(-180deg) translateX(4px);
+  }
+} */
+
+  @keyframes success {
+    from {
+      transform: rotateY(-180deg) scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  
+    25% {
+      transform: rotateY(-180deg) scale3d(1.1, 1.1, 1.1);
+      opacity: 1;
+    }
+  
+    to {
+      transform: rotateY(-180deg) scale3d(1, 1, 1);
+      opacity: 0;
+    }
+  }
+
+  .correct {
+    pointer-events: none
+  }
+
+  .correct .card-content {
+    animation: success 1.3s ease-in-out forwards;
+  }
+
+  /* .error {
+    animation: error 0.82s cubic-bezier(0.1, 0.7, 1.0, 0.1) both;
+  } */
