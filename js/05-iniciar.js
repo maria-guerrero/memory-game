@@ -5,7 +5,6 @@ function start() {
   document.querySelector(".feedback").classList.remove("visible");
   
   const movementsText = document.querySelector('.movements-element');
-  movementsText.innerHTML = "00";
 
   document.querySelectorAll(".card").forEach(function (element) {
     element.addEventListener("click", discoverCardClick);

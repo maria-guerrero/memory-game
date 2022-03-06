@@ -23,15 +23,7 @@
   .title:hover {
     filter: drop-shadow(1px 1px 6px rgb(6, 24, 12));
   }
-
-.chronometer-element {
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.116);
-  font-family: 'Staatliches', cursive;
-}
+  
   .header-title {
     font-size: 15px;
     color: rgb(158, 158, 158);

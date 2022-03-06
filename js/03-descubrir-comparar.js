@@ -16,7 +16,6 @@ function discoverCardClick() {
         }
 
     compare(discovered);
-    updateCounter();
     pendingCards = document.querySelectorAll(".card:not(.correct)");
     if(pendingCards.length === 0) {
         setTimeout(finish, 1000);
