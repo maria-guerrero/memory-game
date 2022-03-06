@@ -147,6 +147,25 @@
     padding-bottom: 15px;
   }
 
+  .goodJobFinal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+  }
+  .reset {
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+    border: white 2px solid;
+    background-color: transparent;
+    text-transform: uppercase;
+  }
+
 @media (min-width: 1200px) {
   .bodyElement {
     background-position: center;
